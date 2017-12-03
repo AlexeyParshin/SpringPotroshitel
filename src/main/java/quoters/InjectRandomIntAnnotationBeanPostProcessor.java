@@ -7,7 +7,6 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.util.ReflectionUtils;
 
 public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProcessor {
-
   public Object postProcessBeforeInitialization(Object bean, String s) throws BeansException {
     Field[] fields = bean.getClass().getDeclaredFields();
     for (Field field : fields) {
