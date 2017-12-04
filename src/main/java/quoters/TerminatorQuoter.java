@@ -16,6 +16,10 @@ public class TerminatorQuoter implements Quoter {
     System.out.println("Phase 1");
   }
 
+  public void setRepeat(int repeat) {
+    this.repeat = repeat;
+  }
+
   @InjectRandomInt(min = 2, max = 7)
   private int repeat;
   private String message;
